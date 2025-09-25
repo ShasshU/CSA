@@ -6,7 +6,7 @@ public class Motorcycle {
     double tankSize;
     double gasInTank;
     double milesDriven;
-    ArrayList<Double> tripLog;
+    ArrayList<Double> tripLog; // extra credit #3
 
     public Motorcycle(double mpg, double tankSize) {
         this.mpg = mpg;
@@ -44,12 +44,12 @@ public class Motorcycle {
         }
     }
 
-    // Extra Credit #1
+    // extra credit #1
     public void showFuelOrCharge() {
         System.out.println("Gas left in Motorcycle: " + gasInTank + " gallons");
     }
 
-    // Extra Credit #2
+    // extra credit #2
     public void showTripLog() {
         System.out.println("Motorcycle Trip Log: " + tripLog);
     }
