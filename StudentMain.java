@@ -14,6 +14,10 @@ public class StudentMain {
         System.out.println(bob.toString());
         System.out.println(charlie.toString());
 
+        unknown.printStudentInfo();
+        alice.printStudentInfo();
+        bob.printStudentInfo();
+
     }
 
 }
