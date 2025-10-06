@@ -1,0 +1,4 @@
+1. If you try to unbox a null integer, it will cause a NullPointerException error. This is beccause Integer is a wrapper class, and it expects int, however null is there instead. 
+2. We could try something such as an if statement, and check if the int value is null. Something like this could help prevent errors before unboxing.
+3. Autoboxing can cause errors when the objects take more memory than the primitive versions, and if theres a lot of scenarious when autoboxing is used, it will increase the memory usage of the program
+4. An error will occur because the max and min values are fixed constants built into the program. Attempting to change them will result in an error.
