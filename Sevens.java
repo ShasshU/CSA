@@ -56,6 +56,24 @@ public class Sevens {
         System.out.println(
                 "Which numbers do you want to remove? Remember that the two numbers must add up to 7. Pick a number 1-6, and pick 0 if your done");
 
+        System.out.println("First number to remove:");
+        removeNumber1 = scanner.nextInt();
+        player1List.remove(Integer.valueOf(removeNumber1));
+
+        System.out.println("Second number to remove:");
+        removeNumber2 = scanner.nextInt();
+        player1List.remove(Integer.valueOf(removeNumber2));
+
+        System.out.println("Your remaining numbers are: " + player1List);
+        System.out.println("Another round? (yes/no)");
+        String anotherRound = scanner.next();
+        if (anotherRound.equals("yes")) {
+            System.out.println("Starting another round...");
+
+        } else {
+            System.out.println("Moving on to Player 2's turn...");
+
+        }
     }
 
 }
