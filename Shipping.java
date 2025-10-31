@@ -37,7 +37,7 @@ public class Shipping {
             shippingDays = 1;
         }
         if (coupon.equals(secretCode)) {
-            shippingCost -= 2.0;
+            shippingCost -= 10.0;
             if (shippingCost < 0) {
                 shippingCost = 0;
             }
