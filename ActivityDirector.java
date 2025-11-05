@@ -1,24 +1,26 @@
-import java.util.Scanner;
+import java.util.Random;
 
 public class ActivityDirector {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Random rand = new Random();
 
-        int number;
+        int temp = rand.nextInt(92) + 10;
 
-        System.out.println("Enter a temperature from 10-101");
-        number = scanner.nextInt();
+        System.out.println("Temperature:");
+        System.out.println(temp);
 
-        if (number > 95 & number < 25) {
-            System.out.println("Visit our shops!");
-        } else if (number >= 80) {
+        if (temp >= 80) {
             System.out.println("Go swimming!");
-        } else if (number >= 60 & number < 80) {
+        } else if (temp >= 60 && temp < 80) {
             System.out.println("Play tennis!");
-        } else if (number >= 40 & number < 60) {
+        } else if (temp >= 40 && temp < 60) {
             System.out.println("Play golf!");
         } else {
             System.out.println("Go skiing!");
+        }
+
+        if (temp > 95 || temp < 20) {
+            System.out.println("Visit our shops!");
         }
     }
 }
