@@ -1,0 +1,22 @@
+Review the current program as it is currently written. Look at "what works" and "what needs work". Make the necessary changes to the program so it produces the intended outcome (see sample below).
+
+This is a program simulates Clue.
+
+Here is what works:
+- the program randomly generates a final murderer, weapon, and room
+- prints out choices for the user
+- asks user for final guess
+
+
+Here is what needs work:
+
+we want to see if our guess is the same as the solution, but something is off with equals()  check() should only get called if our guess isn't 100% correct
+
+   - The table of the Suspect, Weapon and Room are not aligned.  Use \t to organize each column.
+   - Should print "You have the correct muderer." if we have the correct muderer.
+   - Should print "You have the correct weapon." if we have the correct weapon.
+   - Should print "You have the correct room." if we have the correct room.
+
+Extra:
+    - if we want to ignore case, we can use .equalsIgnoreCase()
+    - should allow the user to iterate through the program to pick the correct Suspect, Weapon and Room
