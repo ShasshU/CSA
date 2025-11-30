@@ -1,3 +1,5 @@
+TEST CASE 1:
+
 How many rounds will you play? (max 10)
 Player 1, what is your name?
 Player 2, what is your name?
@@ -6,69 +8,63 @@ Great! Let's start the game.
 
 ROUND 1
 
-Alice's turn:
+sha's turn:
 
 Roll 1:
-You rolled: 6, 4, 5, 6, 4, 5
-Remaining dice: 6 4 5 6 4 5
-Your score: 30
+You rolled: 2, 1, 5, 4, 4, 2
+Remaining dice: 0 1 0 4 4 2
+Your score: 11
 Roll again? (y/n):
-
 Roll 2:
-You rolled: 3, 1, 3, 1, 3, 3
-Remaining dice: 3 1 3 1 3 3
-Your score: 14
+You rolled: 0, 2, 0, 4, 3, 3
+Remaining dice: 0 2 0 0 0 3
+Your score: 5
 Roll again? (y/n):
-
-Bob's turn:
+uma's turn:
 
 Roll 1:
-You rolled: 2, 3, 4, 2, 6, 1
-Remaining dice: 2 0 0 2 0 0
-Your score: 4
+You rolled: 5, 6, 2, 1, 1, 6
+Remaining dice: 0 0 0 0 0 0
+Your score: 0
 Roll again? (y/n):
-
 End of Round 1
-Alice: 14
-Bob: 4
+sha: 5
+uma: 0
 
 ROUND 2
 
-Alice's turn:
+sha's turn:
 
 Roll 1:
-You rolled: 4, 5, 6, 6, 6, 4
-Remaining dice: 4 5 6 6 6 4
-Your score: 31
+You rolled: 6, 2, 6, 3, 4, 4
+Remaining dice: 6 2 6 0 0 4
+Your score: 18
 Roll again? (y/n):
-
 Roll 2:
-You rolled: 1, 2, 2, 6, 1, 4
-Remaining dice: 0 2 2 0 1 4
-Your score: 9
+You rolled: 2, 4, 6, 0, 0, 5
+Remaining dice: 0 4 6 0 0 0
+Your score: 10
 Roll again? (y/n):
-
-Bob's turn:
+uma's turn:
 
 Roll 1:
-You rolled: 2, 3, 2, 1, 2, 2
-Remaining dice: 2 3 2 1 2 2
-Your score: 12
+You rolled: 2, 1, 2, 2, 3, 1
+Remaining dice: 2 1 2 2 3 1
+Your score: 11
 Roll again? (y/n):
-
 Roll 2:
-You rolled: 5, 4, 1, 1, 3, 6
-Remaining dice: 5 0 0 1 0 0
-Your score: 6
+You rolled: 3, 5, 1, 1, 5, 1
+Remaining dice: 3 5 1 1 5 1
+Your score: 16
 
 End of Round 2
-Alice: 23
-Bob: 10
+sha: 15
+uma: 16
 
 GAME OVER!
-Alice's final score: 23
-Bob's final score: 10
-Alice WINS!
+sha's final score: 15
+uma's final score: 16
+uma WINS!
 
 
 
@@ -82,39 +78,35 @@ Great! Let's start the game.
 
 ROUND 1
 
-Player1's turn:
+sha's turn:
 
 Roll 1:
-You rolled: 3, 3, 5, 1, 3, 5
-Remaining dice: 3 3 5 1 3 5
-Your score: 20
+You rolled: 4, 5, 6, 2, 5, 1
+Remaining dice: 4 0 0 0 5 0
+Your score: 9
 Roll again? (y/n):
-
 Roll 2:
-You rolled: 3, 4, 3, 3, 1, 6
-Remaining dice: 0 0 3 3 0 0
-Your score: 6
+You rolled: 3, 0, 0, 0, 2, 0
+Remaining dice: 3 0 0 0 2 0
+Your score: 5
 Roll again? (y/n):
-
 Roll 3:
-You rolled: 0, 0, 6, 6, 0, 0
-Remaining dice: 0 0 6 6 0 0
-Your score: 12
+You rolled: 5, 0, 0, 0, 4, 0
+Remaining dice: 5 0 0 0 4 0
+Your score: 9
 
-Player2's turn:
+uma's turn:
 
 Roll 1:
-You rolled: 6, 1, 1, 1, 6, 5
-Remaining dice: 0 0 0 1 0 5
+You rolled: 6, 1, 2, 4, 5, 2
+Remaining dice: 0 0 0 4 0 2
 Your score: 6
 Roll again? (y/n):
-
 End of Round 1
-Player1: 12
-Player2: 6
+sha: 9
+uma: 6
 
 GAME OVER!
-Player1's final score: 12
-Player2's final score: 6
-Player1 WINS!
-
+sha's final score: 9
+uma's final score: 6
+sha WINS!
