@@ -70,12 +70,18 @@ public class Sevens {
                 d6 = (int) (Math.random() * 6) + 1;
             } else {
                 // Re-roll only the remaining dice (non-zero ones)
-                if (d1 != 0) d1 = (int) (Math.random() * 6) + 1;
-                if (d2 != 0) d2 = (int) (Math.random() * 6) + 1;
-                if (d3 != 0) d3 = (int) (Math.random() * 6) + 1;
-                if (d4 != 0) d4 = (int) (Math.random() * 6) + 1;
-                if (d5 != 0) d5 = (int) (Math.random() * 6) + 1;
-                if (d6 != 0) d6 = (int) (Math.random() * 6) + 1;
+                if (d1 != 0)
+                    d1 = (int) (Math.random() * 6) + 1;
+                if (d2 != 0)
+                    d2 = (int) (Math.random() * 6) + 1;
+                if (d3 != 0)
+                    d3 = (int) (Math.random() * 6) + 1;
+                if (d4 != 0)
+                    d4 = (int) (Math.random() * 6) + 1;
+                if (d5 != 0)
+                    d5 = (int) (Math.random() * 6) + 1;
+                if (d6 != 0)
+                    d6 = (int) (Math.random() * 6) + 1;
             }
 
             System.out.println("You rolled: " + d1 + ", " + d2 + ", " + d3 + ", " + d4 + ", " + d5 + ", " + d6);
@@ -113,7 +119,7 @@ public class Sevens {
         }
 
         score1 = score1 + roundScore;
-        player1Rolls = player1Rolls == 0 ? maxRolls : player1Rolls; // If didn't break, they rolled all 3 times
+        player1Rolls = player1Rolls == 0 ? maxRolls : player1Rolls;
     }
 
     public static void player2Turn(Scanner scan) {
@@ -132,12 +138,18 @@ public class Sevens {
                 d6 = (int) (Math.random() * 6) + 1;
             } else {
                 // Re-roll only the remaining dice (non-zero ones)
-                if (d1 != 0) d1 = (int) (Math.random() * 6) + 1;
-                if (d2 != 0) d2 = (int) (Math.random() * 6) + 1;
-                if (d3 != 0) d3 = (int) (Math.random() * 6) + 1;
-                if (d4 != 0) d4 = (int) (Math.random() * 6) + 1;
-                if (d5 != 0) d5 = (int) (Math.random() * 6) + 1;
-                if (d6 != 0) d6 = (int) (Math.random() * 6) + 1;
+                if (d1 != 0)
+                    d1 = (int) (Math.random() * 6) + 1;
+                if (d2 != 0)
+                    d2 = (int) (Math.random() * 6) + 1;
+                if (d3 != 0)
+                    d3 = (int) (Math.random() * 6) + 1;
+                if (d4 != 0)
+                    d4 = (int) (Math.random() * 6) + 1;
+                if (d5 != 0)
+                    d5 = (int) (Math.random() * 6) + 1;
+                if (d6 != 0)
+                    d6 = (int) (Math.random() * 6) + 1;
             }
 
             System.out.println("You rolled: " + d1 + ", " + d2 + ", " + d3 + ", " + d4 + ", " + d5 + ", " + d6);
