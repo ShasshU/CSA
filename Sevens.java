@@ -69,7 +69,6 @@ public class Sevens {
                 d5 = (int) (Math.random() * 6) + 1;
                 d6 = (int) (Math.random() * 6) + 1;
             } else {
-                // Re-roll only the remaining dice (non-zero ones)
                 if (d1 != 0)
                     d1 = (int) (Math.random() * 6) + 1;
                 if (d2 != 0)
@@ -137,7 +136,6 @@ public class Sevens {
                 d5 = (int) (Math.random() * 6) + 1;
                 d6 = (int) (Math.random() * 6) + 1;
             } else {
-                // Re-roll only the remaining dice (non-zero ones)
                 if (d1 != 0)
                     d1 = (int) (Math.random() * 6) + 1;
                 if (d2 != 0)
