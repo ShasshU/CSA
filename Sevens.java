@@ -11,6 +11,10 @@ public class Sevens {
 
         System.out.println("How many rounds will you play? (max 10)");
         int rounds = scanner.nextInt();
+        while (rounds < 1 || rounds > 10) {
+            System.out.println("Please enter a number between 1 and 10:");
+            rounds = scanner.nextInt();
+        }
 
         System.out.println("Player 1, what is your name?");
         String player1 = scanner.next();
@@ -49,6 +53,7 @@ public class Sevens {
     }
 
     public static void player1Turn(Scanner scan) {
+        player1Rolls = 0; // Reset for this round
         int d1 = 0, d2 = 0, d3 = 0, d4 = 0, d5 = 0, d6 = 0;
         int roundScore = 0;
         int maxRolls = 3;
@@ -63,6 +68,14 @@ public class Sevens {
                 d4 = (int) (Math.random() * 6) + 1;
                 d5 = (int) (Math.random() * 6) + 1;
                 d6 = (int) (Math.random() * 6) + 1;
+            } else {
+                // Re-roll only the remaining dice (non-zero ones)
+                if (d1 != 0) d1 = (int) (Math.random() * 6) + 1;
+                if (d2 != 0) d2 = (int) (Math.random() * 6) + 1;
+                if (d3 != 0) d3 = (int) (Math.random() * 6) + 1;
+                if (d4 != 0) d4 = (int) (Math.random() * 6) + 1;
+                if (d5 != 0) d5 = (int) (Math.random() * 6) + 1;
+                if (d6 != 0) d6 = (int) (Math.random() * 6) + 1;
             }
 
             System.out.println("You rolled: " + d1 + ", " + d2 + ", " + d3 + ", " + d4 + ", " + d5 + ", " + d6);
@@ -90,9 +103,9 @@ public class Sevens {
             System.out.println("Your score: " + roundScore);
 
             if (rollCount < maxRolls) {
-                System.out.print("Roll again? (yes/no): ");
+                System.out.print("Roll again? (y/n): ");
                 String answer = scan.next();
-                if (!answer.equals("yes")) {
+                if (!answer.equals("y")) {
                     player1Rolls = rollCount;
                     break;
                 }
@@ -117,6 +130,14 @@ public class Sevens {
                 d4 = (int) (Math.random() * 6) + 1;
                 d5 = (int) (Math.random() * 6) + 1;
                 d6 = (int) (Math.random() * 6) + 1;
+            } else {
+                // Re-roll only the remaining dice (non-zero ones)
+                if (d1 != 0) d1 = (int) (Math.random() * 6) + 1;
+                if (d2 != 0) d2 = (int) (Math.random() * 6) + 1;
+                if (d3 != 0) d3 = (int) (Math.random() * 6) + 1;
+                if (d4 != 0) d4 = (int) (Math.random() * 6) + 1;
+                if (d5 != 0) d5 = (int) (Math.random() * 6) + 1;
+                if (d6 != 0) d6 = (int) (Math.random() * 6) + 1;
             }
 
             System.out.println("You rolled: " + d1 + ", " + d2 + ", " + d3 + ", " + d4 + ", " + d5 + ", " + d6);
@@ -144,9 +165,9 @@ public class Sevens {
             System.out.println("Your score: " + roundScore);
 
             if (rollCount < player1Rolls) {
-                System.out.print("Roll again? (yes/no): ");
+                System.out.print("Roll again? (y/n): ");
                 String answer = scan.next();
-                if (!answer.equals("yes")) {
+                if (!answer.equals("y")) {
                     break;
                 }
             }
