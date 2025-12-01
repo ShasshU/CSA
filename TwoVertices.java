@@ -1,5 +1,6 @@
 // FRQ 4: Two Vertices
 
+//part a
 import java.util.ArrayList;
 
 public class TwoVertices {
@@ -22,6 +23,8 @@ public class TwoVertices {
         return true;
     }
 
+
+    //part b
     public static int[][] makeAdjacencyMatrix(ArrayList<String> vertices, String edges) {
         int size = vertices.size();
         int[][] matrix = new int[size][size];
