@@ -1,0 +1,99 @@
+GRADES.JAVA - TEST CASES
+Activity 4.1.1
+========================
+
+TEST CASE 1: Mixed Grades
+--------------------------
+Input: 95, 87, 72, 65, 45, -1
+Expected Output:
+  A's: 1
+  B's: 1
+  C's: 1
+  D's: 1
+  F's: 1
+  Total: 5
+
+
+TEST CASE 2: All A's
+--------------------------
+Input: 90, 95, 100, 93, -1
+Expected Output:
+  A's: 4
+  B's: 0
+  C's: 0
+  D's: 0
+  F's: 0
+  Total: 4
+
+
+TEST CASE 3: Boundary Values
+--------------------------
+Input: 100, 90, 89, 80, 79, 70, 69, 60, 59, 0, -1
+Expected Output:
+  A's: 2  (100, 90)
+  B's: 2  (89, 80)
+  C's: 2  (79, 70)
+  D's: 2  (69, 60)
+  F's: 2  (59, 0)
+  Total: 10
+
+
+TEST CASE 4: All Failing Grades
+--------------------------
+Input: 35, 42, 58, 10, -1
+Expected Output:
+  A's: 0
+  B's: 0
+  C's: 0
+  D's: 0
+  F's: 4
+  Total: 4
+
+
+TEST CASE 5: No Grades Entered
+--------------------------
+Input: -1
+Expected Output:
+  A's: 0
+  B's: 0
+  C's: 0
+  D's: 0
+  F's: 0
+  Total: 0
+
+
+TEST CASE 6: Invalid Input Handling
+--------------------------
+Input: 105, -5, 95, 200, 88, -1
+Expected Output:
+  Program should reject 105, -5, and 200 as invalid
+  Valid grades: 95 (A), 88 (B)
+  A's: 1
+  B's: 1
+  C's: 0
+  D's: 0
+  F's: 0
+  Total: 2
+
+
+TEST CASE 7: Large Dataset
+--------------------------
+Input: 92, 85, 78, 67, 55, 91, 84, 76, 63, 48, 99, 81, 71, 62, 40, -1
+Expected Output:
+  A's: 3  (92, 91, 99)
+  B's: 3  (85, 84, 81)
+  C's: 3  (78, 76, 71)
+  D's: 3  (67, 63, 62)
+  F's: 3  (55, 48, 40)
+  Total: 15
+
+
+PROGRAM REQUIREMENTS CHECKLIST:
+================================
+✓ Uses while loop for input
+✓ Uses Scanner class to receive inputs
+✓ Organizes grades into A, B, C, D, F categories
+✓ Returns total count of each grade
+✓ Uses Java Time API to display Local Date Time
+✓ Handles invalid input (out of range)
+✓ User determines when to stop entering grades (-1)
