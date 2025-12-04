@@ -1,5 +1,6 @@
-public class Secret 
+public class Secret
 {
+	// randomly selects a murderer from 6 possible suspects
 	public String secretMurderer()
 	{
 		int m = (int)(Math.random()*6);
@@ -28,7 +29,8 @@ public class Secret
 			return "Mrs. White";
 		}
 	}
-	
+
+	// randomly selects a weapon from 6 possible weapons
 	public String secretWeapon()
 	{
 		int w = (int)(Math.random()*6);
@@ -48,7 +50,8 @@ public class Secret
 			return "Wrench";
     	}
 	}
-	
+
+	// randomly selects a room from 9 possible rooms
 	public String secretRoom()
 	{
 		int r = (int)(Math.random()*9);

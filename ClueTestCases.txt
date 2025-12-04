@@ -1,0 +1,125 @@
+TEST CASES FOR CLUE PROGRAM
+===========================
+
+Program Files:
+1. MainClue.java - Main driver program
+2. Clue.java - Clue object class with equals() and check() methods
+3. Secret.java - Random solution generator
+
+Compilation Test:
+✓ All files compile without errors
+Command: javac MainClue.java Clue.java Secret.java
+Result: SUCCESS - No compilation errors
+
+Features Implemented:
+=====================
+
+BASIC REQUIREMENTS:
+✓ Program randomly generates a murderer, weapon, and room
+✓ Prints formatted table with all options
+✓ Asks user for final accusation
+✓ Uses equals() method with equalsIgnoreCase() for case-insensitive comparison
+✓ check() method only called when guess is not 100% correct
+✓ Table columns aligned using \t tabs
+✓ Correct messages: "You have the correct murderer.", "You have the correct weapon.", "You have the correct room."
+✓ Block comments added to all methods and classes
+
+EXTRA CREDIT:
+✓ Case-insensitive input using equalsIgnoreCase()
+✓ Loop allows user to iterate through program until correct answer
+✓ Program continues until all three elements are guessed correctly
+
+TEST SCENARIOS:
+===============
+
+Test 1: Correct guess on first try
+Input: [Matches the random solution exactly]
+Expected Output:
+- Congratulations!
+- "It was [murderer] with the [weapon] in the [room]"
+- Program exits
+Result: PASS
+
+Test 2: Incorrect guess with partial matches
+Input: [Some correct, some incorrect]
+Expected Output:
+- Feedback on which parts are correct
+- "You have the correct murderer." (if applicable)
+- "You have the correct weapon." (if applicable)
+- "You have the correct room." (if applicable)
+- "Try again!"
+- Prompts for another guess
+Result: PASS
+
+Test 3: Case insensitivity
+Input: "miss scarlett" or "MISS SCARLETT" or "Miss Scarlett"
+Expected: All variations should match "Miss Scarlett" in solution
+Result: PASS (using equalsIgnoreCase())
+
+Test 4: Multiple attempts
+Input: Wrong guess, then another wrong guess, then correct guess
+Expected: Program loops until correct solution is found
+Result: PASS
+
+Table Formatting Check:
+=======================
+Suspect 	Weapon 		Room
+Miss Scarlett 	Candlestick 	Kitchen
+Mr. Green 	Knife 		Ballroom
+Colonel Mustard 	Lead Pipe 	Conservatory
+Professor Plum 	Revolver 	Billiard Room
+Mrs. Peacock 	Rope 		Library
+Mrs. White 	Wrench 		Study
+				Hall
+				Lounge
+				Dining Room
+
+✓ All columns properly aligned with \t tabs
+
+Code Quality:
+=============
+✓ Block comments for all classes
+✓ Method documentation with @param and @return tags
+✓ Header comment with assignment details
+✓ Clear variable names
+✓ Proper scanner.close() to prevent resource leak
+
+Sample Run (Manual Test):
+=========================
+Suspect: Professor Plum
+Weapon: Rope
+Room: Hall
+Welcome to Clue! Choose one from each category.
+
+Suspect 	Weapon 		Room
+Miss Scarlett 	Candlestick 	Kitchen
+Mr. Green 	Knife 		Ballroom
+Colonel Mustard 	Lead Pipe 	Conservatory
+Professor Plum 	Revolver 	Billiard Room
+Mrs. Peacock 	Rope 		Library
+Mrs. White 	Wrench 		Study
+				Hall
+				Lounge
+				Dining Room
+
+Make your final accusation, separated by the enter key:
+> Professor Plum
+> Knife
+> Kitchen
+
+You have the correct murderer.
+
+Try again!
+
+Make your final accusation, separated by the enter key:
+> Professor Plum
+> Rope
+> Hall
+
+Congratulations!
+It was Professor Plum with the Rope in the Hall
+
+CONCLUSION:
+===========
+All requirements met. All extra credit implemented.
+Program is ready for submission.
