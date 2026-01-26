@@ -8,7 +8,7 @@ public class AutoList {
 
     public AutoList(String model, int year, double value) {
         this.model = model;
-        this.year = year;
+        this.year = year; 
         this.value = value;
         showroom.add(this);
         // add this car to showroom
