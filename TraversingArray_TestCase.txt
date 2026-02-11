@@ -1,0 +1,154 @@
+================================================================================
+                    TRAVERSINGARRAY.JAVA - TEST CASE DOCUMENTATION
+================================================================================
+
+Date: February 11, 2026
+Course: Computer Science A
+Assignment: Activity 3.6.2 Traversing Array
+
+================================================================================
+1. TEST PURPOSE
+================================================================================
+
+This test case validates the TraversingArray.java program, which demonstrates
+array traversal techniques including forward iteration, reverse iteration,
+searching, calculating averages, and modifying array elements.
+
+================================================================================
+2. PROGRAM REQUIREMENTS
+================================================================================
+
+Requirement                                                          Status
+------------------------------------------------------------------------
+Create printNeatly() method to display array with formatting        ✓ Pass
+Create reverseNeatly() method to display array in reverse           ✓ Pass
+Create countZero() method to find and count zero values             ✓ Pass
+Create getAverage() method returning average to 2 decimal places    ✓ Pass
+Create switchFirstSecond() method to swap first two elements        ✓ Pass
+Use Java Time API to display date/time                              ✓ Pass
+Include appropriate comments                                        ✓ Pass
+
+================================================================================
+3. TEST EXECUTION
+================================================================================
+
+3.1 COMPILATION TEST
+--------------------
+$ javac TraversingArray.java
+(No errors - compilation successful)
+
+3.2 RUNTIME TEST
+----------------
+$ java TraversingArray
+
+================================================================================
+4. ACTUAL OUTPUT
+================================================================================
+
+Program executed on: February 11, 2026 at 01:48:57 PM
+
+The goals scored were 1, 2, 0, 3, 2, 4, 2, 1, 0, 2, 0, 1, 3, and 2.
+
+The goals scored backwards are 2, 3, 1, 0, 2, 0, 1, 2, 4, 2, 3, 0, 2, and 1.
+
+We scored 0 goals in game 3
+We scored 0 goals in game 9
+We scored 0 goals in game 11
+We had 3 games, where we did not score a goal.
+
+The average number of goals score per game is 1.64
+
+The actual goals were 2, 1, 0, 3, 2, 4, 2, 1, 0, 2, 0, 1, 3, and 2.
+
+================================================================================
+5. METHOD VERIFICATION
+================================================================================
+
+5.1 printNeatly() Method
+------------------------
+Purpose: Prints array with commas between elements and "and" before last element
+Expected: "1, 2, 0, 3, 2, 4, 2, 1, 0, 2, 0, 1, 3, and 2."
+Actual: Matches expected format
+Status: PASS ✓
+
+5.2 reverseNeatly() Method
+--------------------------
+Purpose: Prints array in reverse order with proper formatting
+Expected: "2, 3, 1, 0, 2, 0, 1, 2, 4, 2, 3, 0, 2, and 1."
+Actual: Matches expected format
+Status: PASS ✓
+
+5.3 countZero() Method
+----------------------
+Purpose: Counts and displays games with zero goals
+Expected: 3 games (game 3, 9, and 11)
+Actual: Correctly identified all 3 games with 0 goals
+Status: PASS ✓
+
+5.4 getAverage() Method
+-----------------------
+Purpose: Calculates average goals per game to 2 decimal places
+Calculation: (1+2+0+3+2+4+2+1+0+2+0+1+3+2) / 14 = 1.642857... ≈ 1.64
+Expected: 1.64
+Actual: 1.64
+Status: PASS ✓
+
+5.5 switchFirstSecond() Method
+------------------------------
+Purpose: Swaps first and second array elements
+Before: [1, 2, 0, 3, ...]
+After: [2, 1, 0, 3, ...]
+Actual: "2, 1, 0, 3, 2, 4, 2, 1, 0, 2, 0, 1, 3, and 2."
+Status: PASS ✓
+
+================================================================================
+6. EXPECTED VS. ACTUAL COMPARISON
+================================================================================
+
+Test Case                          Expected        Actual          Match
+------------------------------------------------------------------------
+printNeatly format                 Correct         Correct         ✓
+reverseNeatly format               Correct         Correct         ✓
+Zero count                         3               3               ✓
+Zero locations                     3, 9, 11        3, 9, 11        ✓
+Average calculation                1.64            1.64            ✓
+First element after switch         2               2               ✓
+Second element after switch        1               1               ✓
+
+================================================================================
+7. CODE QUALITY ASSESSMENT
+================================================================================
+
+Criterion                                          Assessment
+------------------------------------------------------------------------
+Comments present and descriptive                   ✓ Excellent
+Method functionality                               ✓ Excellent
+Array traversal techniques                         ✓ Excellent
+Java Time API correctly implemented                ✓ Excellent
+Code formatting and readability                    ✓ Excellent
+Proper use of loops                                ✓ Excellent
+Mathematical calculations accuracy                 ✓ Excellent
+
+================================================================================
+8. TEST CONCLUSION
+================================================================================
+
+Overall Result: PASS ✓
+
+The TraversingArray.java program successfully meets all specified requirements.
+All five methods work correctly:
+
+• printNeatly() formats array output with proper punctuation
+• reverseNeatly() displays array in reverse with correct formatting
+• countZero() accurately identifies and counts zero values
+• getAverage() calculates and rounds average correctly to 2 decimal places
+• switchFirstSecond() properly swaps the first two array elements
+
+The program uses Java Time API and includes appropriate comments.
+All test cases passed without errors.
+
+Program is ready for submission.
+
+================================================================================
+End of Test Case Documentation
+================================================================================
